@@ -13,6 +13,7 @@ h1{
 .projects { 
     display:flex; 
     flex-wrap:wrap;
+    
  } 
 .project {
 width: 30%;
