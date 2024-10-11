@@ -1,11 +1,11 @@
 body{
     background-color: rgb(211, 148, 237);
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 
 h1{
     text-align: center;
-    color:blue
+    color:rgb(51, 15, 52)
 }
 .about
 
@@ -19,14 +19,14 @@ h1{
 width: 30%;
 margin: 10px;
 padding: 20px 10px;
-background: white; /* pick a color */
+background: rgb(206, 158, 226); /* pick a color */
 border-radius: 25%;
 }
 .project img{
     width: 300px;
     height: 300px;
     margin: 10px;
-    border: 2px solid rgb(126, 14, 201); /* choose a color */
+    border: 2px solid rgb(48, 19, 55); /* choose a color */
     display: block;
     margin: auto;
     }
