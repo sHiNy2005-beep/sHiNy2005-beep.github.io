@@ -1,5 +1,5 @@
 body{
-    background-color: aquamarine;
+    background-color: rgb(211, 148, 237);
     font-family:Arial, Helvetica, sans-serif ;
 }
 
@@ -13,7 +13,7 @@ h1{
 .projects { 
     display:flex; 
     flex-wrap:wrap;
-    
+
  } 
 .project {
 width: 30%;
