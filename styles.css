@@ -1,59 +1,67 @@
-body{
+body {
     background-color: rgb(211, 148, 237);
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1{
+h1 {
     text-align: center;
-    color:rgb(51, 15, 52)
+    color: rgb(51, 15, 52);
 }
-
-
 
 .projects { 
-    display:flex; 
-    flex-wrap:wrap;
+    display: flex; 
+    flex-wrap: wrap;
+} 
 
- } 
 .project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: rgb(238, 236, 239); /* pick a color */
-border-radius: 25%;
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: rgb(238, 236, 239); /* pick a color */
+    border-radius: 25%;
+    text-align: center;
 }
-.project img{
-    width: 300px;
-    height: 300px;
+
+.project img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     margin: 10px;
     border: 2px solid rgb(48, 19, 55); /* choose a color */
     display: block;
     margin: auto;
-    }
+}
+
 a { /* change the appearance of ALL links */
-        text-decoration: none;
-        color: purple;
-        }
-        .project p { /* change the appearance of paragraph tags inside .project divs */
-        text-align: center;
-        margin: 15px;
-        }
- about{
-        display:flex;
-        flex-wrap:wrap;
-        margin-right: 100px;
-        margin-left: 100px;
-        justify-content: center;
-        }
-         .about p {
-            width:50%;
-            text-align: center;
-            margin: auto;
-            line-height: 125%;
-            }
-            .about img {
-                width: 150px;
-                height: 200px;
-                border-radius: 25%;
-                border: 2px solid rgb(126, 14, 201);
-                }    
+    text-decoration: none;
+    color: purple;
+}
+
+.project p { /* change the appearance of paragraph tags inside .project divs */
+    text-align: center;
+    margin: 15px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.about p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    line-height: 125%;
+}
+
+.about img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 15%;
+    border: 2px solid rgb(126, 14, 201);
+    margin: auto;
+}
