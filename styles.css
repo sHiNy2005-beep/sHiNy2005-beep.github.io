@@ -1,6 +1,9 @@
 body {
     background-color: rgb(211, 148, 237);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 40px;
+    display:flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -23,9 +26,7 @@ h1 {
 }
 
 .project img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
     margin: 10px;
     border: 2px solid rgb(48, 19, 55); /* choose a color */
     display: block;
@@ -34,6 +35,7 @@ h1 {
 
 a { /* change the appearance of ALL links */
     text-decoration: none;
+    text-align: center;
     color: purple;
 }
 
@@ -48,6 +50,13 @@ a { /* change the appearance of ALL links */
     margin-right: 100px;
     margin-left: 100px;
     justify-content: center;
+}
+.about img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25%;
+    border: 2px solid rgb(211, 148, 237)
+
 }
 
 .about p {
