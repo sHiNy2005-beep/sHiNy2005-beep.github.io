@@ -2,7 +2,7 @@ body {
     background-color: rgb(211, 148, 237);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 40px;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -11,90 +11,73 @@ h1 {
     color: rgb(51, 15, 52);
 }
 
-h2
-{
+h2 {
     text-align: center;
-    color: black
+    color: black;
     text-shadow: 1px 1px 2px rgb(126, 14, 201);
 }
 
-.projects { 
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
+.projects {
+    display: flex;
+    flex-direction: column; /* Align projects vertically */
+    align-items: center;
     gap: 20px;
     margin: 20px auto;
-    max-width: 1200px;
-} 
+    max-width: 400px; /* Limits the width for a single column */
+}
 
 .project {
-    width: 30%;
-    margin: 10px;
-    padding: 20px 10px;
-    background: rgb(238, 236, 239); /* pick a color */
-    border-radius: 25%;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background: rgb(238, 236, 239);
+    border-radius: 10px;
     text-align: center;
+    box-sizing: border-box;
 }
-img
-{
-    width: 100%
-    height:auto;
-}
+
 .project img {
     max-width: 100%;
-    margin: 10px;
-    border: 2px solid rgb(48, 19, 55); /* choose a color */
-    display: block;
-    margin: 10px 0;
     height: auto;
-}
-
-a { /* change the appearance of ALL links */
-    text-decoration: none;
-    text-align: center;
-    color: purple;
-}
-
-.project p { /* change the appearance of paragraph tags inside .project divs */
-    text-align: center;
-    margin: 15px;
-}
-
-.project p
-{
-    text-align: center;
-    margin: 10px 0;
-    color: rgb(105, 105, 185);
-    font-size: 1.2em;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid rgb(48, 19, 55);
 }
 
 .about {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: 100px;
-    margin-left: 100px;
-    justify-content: center;
+    flex-direction: column; /* Center content vertically */
+    align-items: center;
+    gap: 20px;
+    margin: 40px auto;
+    text-align: center;
 }
-.about img{
-    width: 200px;
-    height: 200px;
-    border-radius: 25%;
-    border: 2px solid rgb(211, 148, 237)
 
+.about .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular profile image */
+    object-fit: cover; /* Ensure the image fits perfectly without distortion */
+    border: 2px solid rgb(126, 14, 201);
 }
 
 .about p {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    line-height: 125%;
+    max-width: 600px;
+    line-height: 1.5;
 }
 
-.about img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 15%;
-    border: 2px solid rgb(126, 14, 201);
-    margin: auto;
+a {
+    text-decoration: none;
+    color: purple;
 }
+
+.project p {
+    color: rgb(105, 105, 185);
+    font-size: 1.2em;
+}
+
+.contact p {
+    text-align: center;
+    margin: 20px;
+}
+
