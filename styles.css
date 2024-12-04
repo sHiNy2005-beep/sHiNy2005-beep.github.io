@@ -18,12 +18,12 @@ h2 {
 }
 
 .projects {
-    display: flex;
-    flex-direction: column; /* Align projects vertically */
-    align-items: center;
-    gap: 20px;
+    display: grid; /* Switch to grid */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 20px; /* Space between blocks */
     margin: 20px auto;
-    max-width: 400px; /* Limits the width for a single column */
+    max-width: 100%; /* Allow the grid to take full width */
+    justify-items: center; /* Center the items within their columns */
 }
 
 .project {
@@ -80,4 +80,3 @@ a {
     text-align: center;
     margin: 20px;
 }
-
