@@ -75,17 +75,31 @@ a { /* change the appearance of ALL links */
 }
 
 .about p {
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin: auto;
     line-height: 125%;
 }
 
 .about img {
-    width: 100%;
+    width: 50%;
     max-width: 150px;
     height: auto;
     border-radius: 15%;
     border: 2px solid rgb(126, 14, 201);
     margin: auto;
+}
+
+iframe {
+    width: 100%; /* Ensures it takes up the full width of its container */
+    max-width: 560px; /* Optional: Set max width similar to YouTube default */
+    height: 315px; /* Maintain aspect ratio */
+    border: none; /* Remove border if any */
+    display: block;
+    margin-bottom: 10px; /* Space between the video and the title */
+}
+
+.project h3 {
+    margin-top: 10px;
+    text-align: center; /* Center-align the title */
 }
