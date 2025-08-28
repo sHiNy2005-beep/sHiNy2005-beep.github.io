@@ -1,0 +1,48 @@
+body{
+    background: #385d38;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    width:80%;
+    margin:auto;
+    background: rgb(193, 243, 207);
+    padding: 2%;
+    border-radius: 5px;
+}
+#main-header{
+    background:rgb(128, 187, 145);
+    border-radius:5px;
+    padding:1%;
+    color:rgb(50, 46, 46);
+}
+/* Main Navigation  */
+#main-nav ul{
+    list-style-type: none;
+}
+#main-nav li{
+    border-bottom:1px solid white;
+}
+#main-nav li:first-child{
+    border-top:1px solid white
+}
+#main-nav a {
+    color:white;
+    text-decoration:none; /* no underline */
+    padding: 10px 5px; /* space around the text */
+    display:block;
+
+}
+/*Typography */
+h1{
+    text-align:center;
+
+
+}
+/* Larger Devices like a computer */
+@media only screen and (min-width: 768px){
+    body{
+        background: url(images/forest.jpg);
+        background-size: cover;
+    }
+
+}
