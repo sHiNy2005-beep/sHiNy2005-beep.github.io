@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(242, 190, 198);
+    font-family:Georgia, serif;
+    padding: 10px;
+    margin: 10px;
+}
+#content{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px, rgba whitesmoke;
+}
+.assignment-link{
+    font-size: 20px;
+    color: darkblue;
+    text-decoration: none;
+}
+#link{
+    text-decoration:none;
+    color: purple;
+}
+#content {
+    background-color: rgb(179, 220, 245);
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px, rgba(0,0,0,0.2);
+}
+            

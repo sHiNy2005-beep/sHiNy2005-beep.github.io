@@ -1,0 +1,44 @@
+/*Structure */
+body {
+    font-family: Arial, Helvetica,sans-serif;
+    background:url(images/background.jpeg);
+    background-size:cover;  /* cover the whole page */
+}
+
+#content {   /* main content that styles only that( the first one created with paras) div */
+     background-color: pink;
+     width:70%; 
+     margin:auto;   /*center */
+     padding:1%;  /* to get text  away from border */
+     border-radius:5px;  /* rounded corners */
+    }
+/* Tables */
+table {
+        border-collapse: collapse; /* to avoid double borders and make it one line in the middle of the table */
+}
+td, th {
+    border:1px  solid black;
+    /* border-collapse: collapse;  this being here helps with the double borders instead of single*/
+    padding:5px 10px; /* space between text and border, top and bottom is 5 and right and left is 10 */   
+}
+
+th{
+    background-color:lightblue;
+    color:black;
+}
+/* Images */
+#giraffe-pic {
+    box-shadow: 7px 7px lightpink;
+    max-width: 100%;  /* to make sure it fits in the div */
+    height:auto;
+    object-fit: cover;
+}
+/* Typography */
+
+h1{
+    color:blueviolet;
+}
+h2{
+    color:deeppink;
+}
+
