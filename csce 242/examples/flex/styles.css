@@ -18,6 +18,8 @@ body{
 /* Main Navigation  */
 #main-nav ul{
     list-style-type: none;
+    padding-left:0;
+
 }
 #main-nav li{
     border-bottom:1px solid white;
@@ -30,8 +32,12 @@ body{
     text-decoration:none; /* no underline */
     padding: 10px 5px; /* space around the text */
     display:block;
-
 }
+#main-nav a:hover{
+    background:rgb(87, 147, 104);
+    color:rgb(127, 223, 141);
+}
+
 /*Typography */
 h1{
     text-align:center;
@@ -44,5 +50,24 @@ h1{
         background: url(images/forest.jpg);
         background-size: cover;
     }
+    #content{
+        width:70%;
+    }
+/* Columns */
+.columns{
+    display:flex;
+}
+/*Main Nav*/
 
+#main-nav li, #main-nav li:first-child {
+    border:none;
+}
+#main-nav a{
+    padding:5px;
+}
+#main-nav a:hover {
+   background:rgb(87, 147, 104);
+   color:white;
+   border-bottom:1px solid white
+}
 }
