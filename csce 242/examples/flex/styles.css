@@ -1,3 +1,9 @@
+:root{
+    --primary-color:#4F5902;
+    --secondary-color: #595245;
+}
+
+
 body {
     background:#7be09b;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +22,7 @@ body {
     color:rgb(229, 194, 194);
     border-radius:5px;
     padding:5px;
+    position:relative;
 }
 
 #main-content section, #main-content aside {
@@ -27,6 +34,16 @@ body {
     padding:5px;
     border-radius:5px;
     margin:5px;
+}
+/*Showcase  */
+#showcase p{
+    background:#646c4a;
+    color:white;
+    padding:10px;
+    width:fit-content;
+    position:relative;
+    top:0;
+    left:0;
 }
 
 /* Gallery */
@@ -54,6 +71,9 @@ img {
     list-style-type: none;  /* remove the bullets */
     padding-left:0;
 }
+nav li{
+    text-decoration: none;
+}
 
 #main-nav li {
     border-bottom:1px solid white;
@@ -74,6 +94,17 @@ img {
     background:white;
     color:#a3f3f6;
 }
+#login-nav{
+    position:absolute;
+    top:2.5%;
+    right:2.5%;
+}
+#login-nav a{
+    color:white;
+    padding:5px;
+    display:block;
+}
+
 
 /* Typography */
 h1 {

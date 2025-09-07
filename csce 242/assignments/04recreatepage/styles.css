@@ -1,0 +1,306 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Top utility bar */
+.top-bar {
+  background-color: #73000a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.utility-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Main navigation */
+.main-nav {
+  background-color: #a30015;
+  padding: 0.75rem 2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Promo sections */
+.promo,
+.promo.alt,
+.prepared-banner,
+.research-highlight,
+.alumni-network,
+.empower-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.promo img,
+.prepared-banner img,
+.research-highlight img,
+.alumni-network img,
+.empower-image img {
+  flex: 1 1 45%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.promo-text,
+.prepared-text,
+.research-text,
+.alumni-text,
+.empower-text {
+  flex: 1 1 50%;
+}
+
+.promo-text h2,
+.prepared-text h2,
+.research-text h2,
+.alumni-text h2,
+.empower-text h2 {
+  color: #73000a;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.promo-text p,
+.prepared-text p,
+.research-text p,
+.alumni-text p,
+.empower-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-academics,
+.btn-discovery,
+.btn-connect,
+.btn-apply,
+.btn-news,
+.btn-red {
+  display: inline-block;
+  background-color: #a30015;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-academics:hover,
+.btn-discovery:hover,
+.btn-connect:hover,
+.btn-apply:hover,
+.btn-news:hover,
+.btn-red:hover {
+  background-color: #73000a;
+}
+
+/* Testimonial */
+.testimonial {
+  background-color: #f4f4f4;
+  padding: 3rem 2rem;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portrait img {
+  border-radius: 50%;
+}
+
+.quote-box {
+  max-width: 700px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.attribution {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* News grid */
+.news-section {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.news-item {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.news-item img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.news-item h3 {
+  color: #73000a;
+  margin-top: 1rem;
+}
+
+/* Empower section */
+.empower-image {
+  position: relative;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Footer */
+.usc-footer {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #75000a;
+  font-weight: bold;
+}
+
+.footer-address {
+  line-height: 1.4;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 30%;
+}
+
+.footer-column h4 {
+  color: #75000a;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 1rem;
+  background-color: #75000a;
+  color: white;
+  font-size: 0.9rem;
+}
