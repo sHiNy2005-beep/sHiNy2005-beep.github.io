@@ -8,40 +8,57 @@ body {
 
 /* Top utility bar */
 .top-bar {
-  background-color: #73000a;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #000000;
+  color: white;
   padding: 0.75rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
+.logo img {
+  max-height: 40px;
+}
+
+.utility-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  flex: 1;
 }
 
 .utility-nav a {
   color: white;
   text-decoration: none;
-  margin-left: 1.5rem;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
+.college-title {
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: right;
+}
+
 /* Main navigation */
 .main-nav {
-  background-color: #a30015;
+  background-color: #73000a;
   padding: 0.75rem 2rem;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
   gap: 2rem;
   margin: 0;
   padding: 0;
 }
+
 
 .main-nav a {
   color: white;
@@ -138,7 +155,7 @@ body {
 .btn-news,
 .btn-red {
   display: inline-block;
-  background-color: #a30015;
+  background-color: #73000a;
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -264,7 +281,7 @@ body {
 
 .footer-nav a {
   text-decoration: none;
-  color: #75000a;
+  color: #73000a;
   font-weight: bold;
 }
 
@@ -284,7 +301,7 @@ body {
 }
 
 .footer-column h4 {
-  color: #75000a;
+  color: #73000a;
   margin-bottom: 0.5rem;
 }
 
@@ -300,7 +317,7 @@ body {
 footer p {
   text-align: center;
   padding: 1rem;
-  background-color: #75000a;
+  background-color: #73000a;
   color: white;
   font-size: 0.9rem;
 }
