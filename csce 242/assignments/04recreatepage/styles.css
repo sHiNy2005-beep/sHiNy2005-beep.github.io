@@ -53,7 +53,7 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end; /* Aligns items to the right */
+  justify-content: flex-end; 
   gap: 2rem;
   margin: 0;
   padding: 0;
@@ -65,6 +65,99 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
+}
+/*Prepared -banner */
+.prepared-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.prepared-banner {
+  background-color: #73000a;
+  color: white;
+  flex: 1 1 60%;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.prepared-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prepared-text h2,
+.prepared-text p {
+  color: white;
+}
+
+.btn-academics {
+  background-color: rgb(7, 6, 6);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  align-self: start;
+  border: 2px solid #fffdfd;
+}
+
+.prepared-image {
+  flex: 1 1 40%;
+  margin: 0;
+}
+
+.prepared-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; 
+}
+/* Find a program section */
+.program-finder {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color:#ededed;
+  
+}
+.program-finder h2 {
+  color:#73000a;
+}
+
+.program-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.btn-red {
+  display: inline-block;
+  background-color: #73000a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+  background-color: white;
+  color: #73000a;
+  border: 2px solid white; 
 }
 
 /* Hero section */
@@ -94,7 +187,7 @@ body {
   margin: 0;
 }
 
-/* Promo sections */
+/* Promo section */
 .promo,
 .promo.alt,
 .prepared-banner,
@@ -109,7 +202,16 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.promo { /*  the lorem ispem on the first page under the huge image */
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.promo-text p {
+  max-width: 800px; 
+  margin: 0 auto;   
+  text-align: center;
+}
 .promo img,
 .prepared-banner img,
 .research-highlight img,
@@ -133,7 +235,7 @@ body {
 .research-text h2,
 .alumni-text h2,
 .empower-text h2 {
-  color: #73000a;
+  color: #ffffff;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -146,7 +248,149 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+/* Reasearch and Discovery Impacting the SC and Beyond */
+.research-highlight {
+  padding: 3rem;
+}
+.research-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
+.research-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.research-content img:hover {
+  transform: scale(1.05);
+}
+
+.impact-text-wrapper {
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1 1 40%;
+  min-width: 300px;
+  color: #fff;
+}
+
+.research-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Impact', sans-serif;
+}
+
+.research-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn-discovery {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #73000a; 
+  color: #000; 
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn-discovery:hover {
+  background-color: #fff;
+  color: #000; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/*Alumni A power network of connections section with the the women laying sec" */
+.alumni-content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.alumni-network {
+  background-color: #1f404d;
+  color: white;
+  flex: 1 1 60%;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.alumni-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alumni-text h2,
+.alumni-text p {
+  color: white;
+}
+
+.btn-connect {
+  display: inline-block;
+  background-color: #73000a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border: 2px solid #73000a;
+  transition: all 0.3s ease;
+}
+
+.btn-connect:hover {
+  background-color: white;
+  color: #73000a;
+  border: 2px solid white;
+}
+
+.alumni-image {
+  flex: 1 1 40%;
+  margin: 0;
+}
+
+.alumni-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Your exact button styling */
+.btn-connect {
+  display: inline-block;
+  background-color: #73000a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 1rem;
+  border: 2px solid #73000a;
+  transition: all 0.3s ease;
+}
+
+.btn-connect:hover {
+  background-color: white;
+  color: #73000a;
+  border: 2px solid white;
+}
 /* Buttons */
 .btn-academics,
 .btn-discovery,
@@ -176,7 +420,8 @@ body {
 
 /* Testimonial */
 .testimonial {
-  background-color: #f4f4f4;
+  background-color: #73000a; 
+  color: white;            
   padding: 3rem 2rem;
 }
 
@@ -199,69 +444,150 @@ body {
 .quote {
   font-style: italic;
   font-size: 1.1rem;
+  color: white;
 }
 
 .attribution {
   margin-top: 0.5rem;
-  font-weight: bold;
+  color: white; 
 }
 
 /* News grid */
 .news-section {
-  padding: 3rem 2rem;
   background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.news-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #73000a; 
+  margin-bottom: 2rem;
 }
 
 .news-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  justify-content: space-between;
 }
 
 .news-item {
-  flex: 1 1 30%;
-  background-color: white;
-  padding: 1rem;
+  background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
 }
 
 .news-item img {
   width: 100%;
-  border-radius: 4px;
+  height: auto;
+  display: block;
 }
 
 .news-item h3 {
-  color: #73000a;
-  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+  margin: 1rem;
 }
+
+.news-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0 1rem 1rem;
+  line-height: 1.5;
+}
+
+.btn-news {
+  display: inline-block;
+  margin: 0 1rem 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #73000a; 
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-news:hover {
+  background-color: #5a0008;
+}
+
 
 /* Empower section */
-.empower-image {
-  position: relative;
+.empower-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
 }
 
-.play-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
+.empower-section {
+  background-color: #000000;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.5rem 1rem;
-  border-radius: 50%;
-  cursor: pointer;
+  flex: 1 1 60%;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.empower-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.empower-text h2,
+.empower-text p {
+  color: white;
+}
+
+.btn-apply {
+  background-color: rgb(7, 6, 6);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  max-width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  align-self: start;
+  border: 2px solid #fffdfd;
+}
+
+.empower-image {
+  flex: 1 1 40%;
+  margin: 0;
+}
+
+.empower-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; 
 }
 
 /* Footer */
 .usc-footer {
-  background-color: #f4f4f4;
+  background-color: #73000a; 
   padding: 2rem;
   font-size: 0.95rem;
+  color: #ffffff; 
 }
 
+/* Top Section */
 .footer-top {
   display: flex;
   flex-wrap: wrap;
@@ -281,14 +607,16 @@ body {
 
 .footer-nav a {
   text-decoration: none;
-  color: #73000a;
+  color: #ffffff; 
   font-weight: bold;
 }
 
 .footer-address {
   line-height: 1.4;
+  color: #ffffff;
 }
 
+/* Middle Section: Columns */
 .footer-columns {
   display: flex;
   flex-wrap: wrap;
@@ -301,7 +629,7 @@ body {
 }
 
 .footer-column h4 {
-  color: #73000a;
+  color: #fffcfd; 
   margin-bottom: 0.5rem;
 }
 
@@ -312,12 +640,23 @@ body {
 
 .footer-column li {
   margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
-footer p {
+/* Bottom Section */
+.footer-bottom {
+  background-color: #000000; 
+  color: #fff9fa;          
   text-align: center;
   padding: 1rem;
-  background-color: #73000a;
-  color: white;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+
 }
+
+.footer-bottom p {
+  margin: 0;
+  line-height: 1.6;
+  border-radius: 0; 
+
+}
+
