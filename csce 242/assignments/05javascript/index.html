@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset ="UTF-8">
+        <title> CSCE 242: Assignment 5</title>
+        <link rel="stylesheet"href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>Assignment 5</h1>
+            <h2>Introduction to JavaScript</h2>
+        </header>
+
+        <main id="content">
+            <div class="Layout">
+                <div class="Layout-poem">
+                    <button onclick="showPoem()">Sunny Times</button>
+                    <p id="display-poem"></p>
+                </div>
+
+                <div class="Layout-color">
+                    <button id="colorBtn" onclick="toggleColorPicker()">Select a Color</button>
+                    <input type="color" id= "colorPicker" class="hidden">
+                    <p id="colorDisplay" class="hidden"></p>
+                </div> 
+
+                <div class="Layout-change">
+                    <button>Image Change</button>
+                    <button onclick="changeImage()">Become Sunny</button>
+                    <img id="weatherImage" src="images/cloudy.png" alt="Weather Image">
+                </div>
+            </div>
+
+        </main>
+    <footer>
+        <p> &copy; 2025 Ruchika Paladugu </p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
