@@ -16,6 +16,7 @@
 
 <!-- Navigation bar on the top -->
   <nav class="main-nav">
+    <button class="toggle" aria-label="Toggle navigation">☰</button>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#contact">Contact Us</a></li>
@@ -82,7 +83,7 @@
         <h1>Doodle Board</h1>
         <p class="section-subtitle">A blank space to doodle and take your mind elsewhere.</p>
 
-        <canvas id="doodleCanvas" width="800" height="400"></canvas>
+        <canvas id="doodleCanvas"></canvas>
 
         <button id="clearBtn">Clear Board</button>
     </section>
@@ -114,16 +115,18 @@
               <option value="other">Other</option>
             </select>
           </div>
-<!-- Used w3 schools to learn how to include forms...-->
-          <button type="submit" class="btn-contact">Send Message</button>
+<!-- Forms for the contact form in the contact section-->    
+       <button type="submit" class="btn-contact">Send Message</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer id="footer">
+  <footer id = "footer">
     <p>&copy; 2025 HeartLog.Ruchika Paladugu.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 
 </body>
