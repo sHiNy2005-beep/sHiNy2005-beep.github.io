@@ -6,32 +6,46 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header id="header">
-  <h1>Assignment 8</h1>
-  <h2>If Statements</h2>
-  <nav class="menu-bar">
-    <div  id="menuToggle" class="menu-toggle" onclick="toggleMenu()">▼</div>
+
+  <header id="header">
+    <h1>Assignment 8</h1>
+    <h2>If Statements</h2>
+
+    <nav class="menu-bar">
+    <button id="menuToggle" class="menu-toggle" onclick="toggleMenu()">▼</button>
+
     <ul id="menuItems" class="menu-items show">
-      <li><a href="#exercise1" class="active" onclick="showExercise(1)">Exercise 1</a></li>
-      <li>|</li>
-      <li><a href="#exercise2" onclick="showExercise(2)">Exercise 2</a></li>
+      <li>
+        <a href="#exercise1" class="active" onclick="showExercise(1)">Exercise 1</a>
+      </li>
+      <li class="divider">|</li> 
+      <li>
+        <a href="#exercise2" onclick="showExercise(2)">Exercise 2</a>
+      </li>
     </ul>
   </nav>
 </header>
 
-  <main id="content">
-    <section id="exercise1" class="exercise-section">
-      <label for="daysSlider">How many days has it been since watering your plant?</label>
-      <input type="range" id="daysSlider" min="1" max="12" value="1" />
-      <img id="plantImage" src="" alt="Plant growth" />
-      <p id="plantMessage"></p>
 
+  <main id="content">
+
+    <section id="exercise1" class="exercise-section">
+      <div class="slider-group">
+        <label for="daysSlider">How many days has it been since watering your plant?</label>
+        <input type="range" id="daysSlider" min="1" max="12" value="1" />
+      </div>
+
+      <div class="plant-visual">
+        <img id="plantImage" src="" alt="Plant growth" />
+        <p id="plantMessage"></p>
+      </div>
     </section>
 
     <section id="exercise2" class="exercise-section hidden">
       <h3>Our Digital Clock</h3>
       <div id="clockDisplay">--:--</div>
-    </section>    
+    </section>
+
   </main>
 
   <footer>

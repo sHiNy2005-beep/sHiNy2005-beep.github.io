@@ -65,16 +65,12 @@ header {
 }
 
 .exercise-section {
-  background-color: #f8c8dc;
-  margin: 2.5em auto;
-  padding: 1em;
+  background-color: #dd8ab0;
+  padding: 1.5em;
   border-radius: 12px;
-  max-width: 600px;
   box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
-  color: #7a3e4b;
-  display: flex;
-  align-items: center;
-  flex-direction:column;
+  margin: 1em auto;
+  max-width: 600px;
 }
 
 .hidden {
