@@ -10,7 +10,7 @@
   <header id="header">
     <h1>Assignment 8</h1>
     <h2>If Statements</h2>
-
+<!-- header for the two excerises -->
     <nav class="menu-bar">
     <button id="menuToggle" class="menu-toggle" onclick="toggleMenu()">▼</button>
 
@@ -18,7 +18,7 @@
       <li>
         <a href="#exercise1" class="active" onclick="showExercise(1)">Exercise 1</a>
       </li>
-      <li class="divider">|</li> 
+      <li class="divider">|</li> <!-- helps with the two buttons dividing -->
       <li>
         <a href="#exercise2" onclick="showExercise(2)">Exercise 2</a>
       </li>
@@ -28,19 +28,18 @@
 
 
   <main id="content">
-
+<!--the plant watering excerise 1-->
     <section id="exercise1" class="exercise-section">
       <div class="slider-group">
         <label for="daysSlider">How many days has it been since watering your plant?</label>
         <input type="range" id="daysSlider" min="1" max="12" value="1" />
       </div>
-
       <div class="plant-visual">
         <img id="plantImage" src="" alt="Plant growth" />
         <p id="plantMessage"></p>
       </div>
     </section>
-
+<!--excerise 2: the clock-->
     <section id="exercise2" class="exercise-section hidden">
       <h3>Our Digital Clock</h3>
       <div id="clockDisplay">--:--</div>
