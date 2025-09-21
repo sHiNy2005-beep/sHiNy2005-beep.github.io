@@ -7,8 +7,6 @@ const image = document.getElementById("plantImage");
 
 slider.addEventListener("input", () => {
   const days = parseInt(slider.value);
-  output.textContent = days;
-
   const dayText = "It's been " + days + (days > 1 ? " days" : " day") + " since watering your plant.<br>";
   let fullMessage = "";
 
@@ -44,25 +42,36 @@ function updateClock() {
   const minutes = now.getMinutes().toString().padStart(2, "0");
   const ampm = hours >= 12 ? "pm" : "am";
   hours = hours % 12 || 12;
-  const timeString = "${hours}:${minutes} ${ampm"};
+  const timeString = `${hours}:${minutes} ${ampm}`;  
   const clockDisplay = document.getElementById("clockDisplay");
   if (clockDisplay) {
     clockDisplay.textContent = timeString;
   }
+}
 
 setInterval(updateClock, 60000);
 updateClock();
 
 function toggleMenu() {
-  const menu = document.querySelector(".menu-items");
-  const toggle = document.querySelector(".menu-toggle");
-  menu.classList.toggle("show");
-  toggle.textContent = menu.classList.contains("show") ? "▲" : "▼";
+  const menu = document.getElementById("menuItems");
+  const toggle = document.getElementById("menuToggle");
+
+  if (menu.classList.contains("show")) {
+    menu.classList.remove("show");
+    toggle.textContent = "▼";
+  } else {
+    menu.classList.add("show");
+    toggle.textContent = "▲";
+  }
 }
 
 function showExercise(num) {
-  const sections = document.querySelectorAll(".exercise-section");
-  sections.forEach(section => section.classList.add("hidden"));
-  const target = document.getElementById("exercise${num}");
-  if (target) target.classList.remove("hidden");
+  document.getElementById("exercise1").classList.add("hidden");
+  document.getElementById("exercise2").classList.add("hidden");
+
+  const target = document.getElementById("exercise" + num);
+  if (target) {
+    target.classList.remove("hidden");
+  }
 }
+

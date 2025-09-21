@@ -10,8 +10,8 @@
   <h1>Assignment 8</h1>
   <h2>If Statements</h2>
   <nav class="menu-bar">
-    <div class="menu-toggle" onclick="toggleMenu()">▼</div>
-    <ul class="menu-items show">
+    <div  id="menuToggle" class="menu-toggle" onclick="toggleMenu()">▼</div>
+    <ul id="menuItems" class="menu-items show">
       <li><a href="#exercise1" class="active" onclick="showExercise(1)">Exercise 1</a></li>
       <li>|</li>
       <li><a href="#exercise2" onclick="showExercise(2)">Exercise 2</a></li>
@@ -23,9 +23,9 @@
     <section id="exercise1" class="exercise-section">
       <label for="daysSlider">How many days has it been since watering your plant?</label>
       <input type="range" id="daysSlider" min="1" max="12" value="1" />
-      <span id="daysOutput">1</span> days
-      <p id="plantMessage"></p>
       <img id="plantImage" src="" alt="Plant growth" />
+      <p id="plantMessage"></p>
+
     </section>
 
     <section id="exercise2" class="exercise-section hidden">
