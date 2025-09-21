@@ -1,8 +1,123 @@
-.exercise-links{
-    background-color:rgb(255, 255, 255);
-
+body {
+  font-family: 'Comic Sans MS';
+  text-align: center;
+  margin: 0;
+  background-color: #fff0f5; 
 }
-.exercises{
-    background-color: rgb(228, 211, 214);
-    border-radius:4px;
+
+header {
+  background: linear-gradient( #f8c8dc, #f3a6c9);
+  padding: 1px;
+  border-bottom: 2px  #e4a1b0;
+  color: #7a3e4b;
+}
+
+.menu-bar {
+  position: relative;
+}
+
+.menu-toggle {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  color: #d16ba5;
+  background-color: #ffe4ec;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 182, 193, 0.4);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 0;
+}
+
+.menu-items.show {
+  display: flex;
+}
+
+.menu-items li {
+  position:relative;
+  display: inline;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #a64c6e;
+  font-weight: bold;
+  padding: 6px 13px;
+  border-radius: 10px;
+  background-color: #ffe4ec;
+  box-shadow: 0 0 5px rgba(255, 182, 193, 0.3);
+}
+
+.menu-items li a:hover {
+  color: #fff;
+  background-color: #d16ba5;
+}
+
+
+.exercise-links {
+  background-color: #fff;
+}
+
+.exercise-section {
+  background-color: #f8c8dc;
+  margin: 2.5em auto;
+  padding: 1em;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+  color: #7a3e4b;
+}
+
+.hidden {
+  display: none;
+}
+
+#clockDisplay {
+  font-size: 1em;
+  margin-top: 1em;
+  color: #a64c6e;
+  font-family: 'Sans-serif';
+  background-color: #ffe4ec;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(255, 182, 193, 0.4);
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: inline-block; 
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .menu-items {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .menu-items.show {
+    display: flex; 
+  }
 }

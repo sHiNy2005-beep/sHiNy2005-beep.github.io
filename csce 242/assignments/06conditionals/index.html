@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset ="UTF-8">
-        <title> CSCE 242: Assignment 6</title>
-        <link rel="stylesheet"href="styles.css">
-    </head>
-    <body>
-        <header id="header">
-            <h1>Assignment 6</h1>
-            <h2> If Statements</h2>
-        </header>
-        <main id="content">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSCE 242: Assignment 8</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header id="header">
+  <h1>Assignment 8</h1>
+  <h2>If Statements</h2>
+  <nav class="menu-bar">
+    <div class="menu-toggle" onclick="toggleMenu()">▼</div>
+    <ul class="menu-items show">
+      <li><a href="#exercise1" class="active" onclick="showExercise(1)">Exercise 1</a></li>
+      <li>|</li>
+      <li><a href="#exercise2" onclick="showExercise(2)">Exercise 2</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <section class="exercises">
-            <div class="exercise-links">
-            <a href="#exercise1">Exercise 1</a>
-            <span class="divider">|</span>
-            <a href="#exercise2">Exercise 2</a>
-            </div>
+  <main id="content">
+    <section id="exercise1" class="exercise-section">
+      <label for="daysSlider">How many days has it been since watering your plant?</label>
+      <input type="range" id="daysSlider" min="1" max="12" value="1" />
+      <span id="daysOutput">1</span> days
+      <p id="plantMessage"></p>
+      <img id="plantImage" src="" alt="Plant growth" />
+    </section>
 
-            <div class="exercise1">
-            <label for="daysSlider">How many days has it been since watering your plant?</label>
-            <input type="range" id="daysSlider" name="daysSlider" min="0" max="30" value="0" />
-            <span id="daysOutput">0</span> days
-            </div>
+    <section id="exercise2" class="exercise-section hidden">
+      <h3>Our Digital Clock</h3>
+      <div id="clockDisplay">--:--</div>
+    </section>    
+  </main>
 
-        </section>
-</main>
+  <footer>
+    <p>&copy; 2025 Ruchika Paladugu</p>
+  </footer>
 
-        </main>
-
-
-
-
-
-
-
-       <footer>
-        <p> &copy; 2025 Ruchika Paladugu </p>
-    </footer>
-    <script src="script.js"></script> 
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>

@@ -26,12 +26,15 @@
     </ul>
   </nav>
 <!--Home page for show-->
-    <section class="home">
-      <h1>Welcome to Heart♥Log</h1>
-      <img src="images/home-background.jpg"alt="Background" class="background-home">
-      <p>Your personal space for journaling, resources, and creativity</p>
-      <a href="#journal" class="btn-home">Start Exploring</a>
-    </section>
+  <section class="home">
+    <img src="images/home-background.jpg" alt="Background" class="background-home">
+  
+    <div class="home-content">
+    <h1>Welcome to Heart♥Log</h1>
+    <p>Your personal space for journaling, resources, and creativity</p>
+    <a href="#journal" class="btn-home">Start Exploring</a>
+    </div>
+  </section>
   <main>
 <!-- Journal Entries for the user -->
     <section id="journal" class="entries">
@@ -80,10 +83,10 @@
     </section>
  <!-- Doodle Section -->
     <section id="doodle" class="doodle">
-        <h1>Doodle Board</h1>
+        <h1>Doodle Board</h1>       
         <p class="section-subtitle">A blank space to doodle and take your mind elsewhere.</p>
 
-        <canvas id="doodleCanvas"></canvas>
+        <canvas id="doodleCanvas" width="800" height="400"></canvas>
 
         <button id="clearBtn">Clear Board</button>
     </section>

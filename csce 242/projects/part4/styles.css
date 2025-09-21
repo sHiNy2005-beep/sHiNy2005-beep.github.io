@@ -8,7 +8,7 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #fdf7fb; 
-  color: #4a2b4f; 
+  color: #7e567a; 
   line-height: 1.6;
 }
 
@@ -50,7 +50,7 @@ header {
 
 .main-nav a {
   text-decoration: none;
-  color: #6a3576;
+  color: #5c2a54;
   font-weight: bold;
   font-size: 1.05rem;
   transition: color 0.3s;
@@ -82,6 +82,16 @@ header {
   max-width: 1000px;
   box-shadow: 0 6px 15px rgba(106, 53, 118, 0.2);
 }
+.home-content {
+  background-color: rgba(255, 208, 254, 0.7); 
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 6px 15px rgba(184, 78, 149, 0.2);
+  text-align: center;
+}
+
 
 .home h1 {
   font-size: 2.5rem;
@@ -131,7 +141,7 @@ header {
 .entries h1 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #7a3a91;
+  color: #ffffff;
 }
 
 .entry {
@@ -183,14 +193,14 @@ header {
 }
 
 .contact-section h2 {
-  color: #7a3a91;
+  color: #c89cd7;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
 .contact-section p {
   margin-bottom: 2rem;
-  color: #5a3a5d;
+  color: #5b415e;
 }
 
 .contact-form .contactbox {
@@ -291,15 +301,19 @@ header {
   background: #b084d8;
 }
 .doodle {
-  background: #fdf1f7;   
+  background-image: url('images/pinkbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 20px;
   padding: 2rem;
   margin: 3rem auto;
   max-width: 950px;
   box-shadow: 0 6px 15px rgba(184, 78, 149, 0.15);
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
-
 .doodle h1 {
   color: #6a3576;
   margin-bottom: 0.5rem;
@@ -311,7 +325,8 @@ header {
   margin-bottom: 2rem;
   font-style: italic;
 }
-/* Whole resources section */
+
+/*  resources section */
 .resources {
   background: #f9e8f2;           
   border-radius: 20px;
@@ -477,13 +492,14 @@ header {
   .resource-card {
     width: 100%;
   }
-
+  /*doodle */
+@media (max-width: 768px) {
   #doodleCanvas {
     width: 100%;
     height: auto;
-    max-width:100%;
+    max-width: 100%;
   }
-
+}
   .contact {
     padding: 2rem 1rem;
   }
