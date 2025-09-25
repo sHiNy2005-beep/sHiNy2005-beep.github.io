@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(255, 205, 213);
+    text-align: center;
+}
+h2{
+    color:rgb(234, 144, 159);
+}
+#gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top: 30px;
+    justify-content:center;
+
+}
+#gallery img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border: 4px solid rgb(243, 159, 173);
+    border-radius: 10px;
+    cursor:pointer;
+}
+#gallery img:hover{
+    transform:scale(1.05);
+}
+footer{
+    background-color: rgb(246, 169, 182);
+    padding: 15px;
+    text-align: center;
+    gap:10px;
+    margin-top:40px;
+
+
+}

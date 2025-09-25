@@ -1,0 +1,122 @@
+body { 
+  margin: 0;
+  font-family: sans-serif; 
+  background-color: #cceeff;  
+  transition: background-color 0.5s ease; 
+  text-align: center;
+}
+
+h2 {
+  color: rgb(232, 113, 113);
+}
+
+#scene {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Cloud */
+.cloud {
+  position: absolute;
+  top: 50px;
+  width: 80px;
+  height: 50px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 30px 0 white, 15px -15px white; 
+  opacity: 0.9;
+}
+
+/* Tree */
+.tree {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 60px;
+  background: #8B4513;
+}
+.tree::after {
+  content: '';
+  position: absolute;
+  top: -30px; 
+  left: -20px; 
+  width: 60px; 
+  height: 60px; 
+  background: green;
+  border-radius: 50%; 
+}
+
+/* Sun */
+.sun {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%; 
+}
+
+
+.moon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: gray;
+  border-radius: 50%;
+  box-shadow: -10px 0 black;
+}
+
+/* Night time */
+.night {
+  background-color: #111;
+  color: white;
+}
+.night .cloud {
+  background: #444;
+  box-shadow: 30px 0 #444, 15px -15px #444;  
+}
+.night .tree::after {
+  background: #013220;
+}
+.night .sun {
+  display: none;
+}
+.night .moon {
+  background: #f0f0f0;
+  box-shadow: -15px 0 #333 inset; 
+}
+
+@media (max-width: 768px) {
+  #scene {
+    height: 300px; 
+  }
+
+  .cloud {
+    width: 60px;
+    height: 35px;
+    top: 80px; 
+  }
+
+  .tree {
+    width: 15px;
+    height: 50px;
+  }
+  .tree::after {
+    width: 45px;
+    height: 45px;
+    left: -15px;
+    top: -25px;
+  }
+
+  .sun, .moon {
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    right: 15px;
+  }
+}
