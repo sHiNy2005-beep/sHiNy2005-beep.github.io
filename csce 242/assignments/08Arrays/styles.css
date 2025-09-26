@@ -24,6 +24,46 @@ h2{
 #gallery img:hover{
     transform:scale(1.05);
 }
+.dog-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 4px solid rgb(243, 159, 173);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dog-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.dog-card:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(243, 159, 173, 0.9);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.dog-card:hover .caption {
+    opacity: 1;
+}
+
 footer{
     background-color: rgb(246, 169, 182);
     padding: 15px;

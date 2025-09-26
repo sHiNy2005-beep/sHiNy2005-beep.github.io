@@ -77,18 +77,19 @@ h2 {
   color: white;
 }
 .night .cloud {
-  background: #444;
-  box-shadow: 30px 0 #444, 15px -15px #444;  
+  background: #ffffff;
+  box-shadow: 30px 0 #ffffff, 15px -15px #ffffff;  
+  opacity:80%;
 }
 .night .tree::after {
-  background: #013220;
+  background: green;
 }
 .night .sun {
   display: none;
 }
 .night .moon {
-  background: #f0f0f0;
-  box-shadow: -15px 0 #333 inset; 
+  background: #111;
+  box-shadow: -15px 0 #111e64 inset; 
 }
 
 @media (max-width: 768px) {
