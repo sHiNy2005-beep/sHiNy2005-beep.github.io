@@ -18,13 +18,16 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem 2rem;
+  justify-content: space-between;
   color: #fff;
   border-bottom: 3px solid #e6c1ea;
+  position: relative;
 }
 
 .logo img {
   height: 50px;
   margin-right: 1rem;
+  flex: 0 0 auto;
 }
 
 .Main-title {
@@ -32,6 +35,16 @@ header {
   font-weight: bold;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  left:50%;
+  top:50%;
+  top: 1.2rem;
+  
+}
+.title-alignment {
+  width: 50px;
 }
 
 /* Navigation */
@@ -81,6 +94,7 @@ header {
   margin: 2rem auto;
   max-width: 1000px;
   box-shadow: 0 6px 15px rgba(106, 53, 118, 0.2);
+  margin-bottom: 8rem;
 }
 .home-content {
   background-color: rgba(233, 133, 210, 0.7); 
@@ -133,15 +147,25 @@ header {
 }
 /* Journal Section */
 .entries {
-  padding: 2rem;
+  padding: 3rem 2rem;
   max-width: 800px;
-  margin: 0 auto;
+  margin:  2rem auto 0 ;
+  padding: 2rem;
+  background: url('images/entries-background.jpg') no-repeat center center/cover;
+
 }
+#journal {
+  padding: 3rem 1rem;  
+  border-radius: 15px;  
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2); 
+  margin: 2rem auto;
+}
+
 
 .entries h1 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
+  color:#5c2a54;
   margin: 0 auto 1.5rem;
   display: block;
 }
@@ -155,20 +179,27 @@ header {
   border-radius: 2px;
 }
 .entries-title {
+  display: inline-block;                
+  padding: 0.5rem 1rem;               
   text-align: center;
-  font-size: rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #ffffff;
-  margin: 3rem auto 1.5rem;
+  color: #e69ac2;                         
+  margin: 2rem auto 0.5rem; 
   position: relative;
   z-index: 2;
   text-shadow: 1px 1px 6px rgba(106, 53, 118, 0.3);
+
+  background: rgba(255, 245, 250, 0.85);  
+  border-radius: 12px;                   
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 
 .entries-title::after {
   content: "";
   display: block;
-  width: 60%;
+  width: 80px;
   height: 4px;
   margin: 0.75rem auto 0;
   background: linear-gradient(90deg, #f3b6d4, #c7a6e2);
@@ -264,7 +295,7 @@ header {
 }
 
 .btn-contact {
-  background: linear-gradient(90deg, #f3b6d4, #c7a6e2); /* used google W3 for the cute coloring transition */
+  background: linear-gradient(90deg, #f3b6d4, #c7a6e2); 
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -281,6 +312,12 @@ header {
 
 
  /* Resources container */
+.resources p{
+  color:#4a2b4f;
+  font-size:2rem;
+  font-weight: bold;
+
+}
 .resources {
   display: flex;
   justify-content: center;
@@ -425,12 +462,12 @@ header {
   font-size: 3rem;
   font-weight: bold;
   color: #6a3576;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   position: relative;
-  display: inline-block;
+  display: block;      
+  text-align: center; 
   padding-bottom: 0.5rem;
 }
-
 .resources h1::after {
   content: "";
   display: block;
@@ -456,11 +493,19 @@ header {
   header {
     flex-direction: column;
     text-align: center;
+    align-items:center;
+    text-align:center;
+  }
+  .Main-title {
+    position: static;
+    transform:none;
+    margin-top:0.5rem;
   }
 
   .logo img {
-    margin-bottom: 0.5rem;
-  }
+    height: 40px;
+    margin-right: 0;
+    }
 
   /* Toggle button */
   .toggle {
@@ -479,7 +524,7 @@ header {
     color: #b84e95;              
   }
 
-  
+  /* Nav menu */
   .main-nav ul {
     flex-direction: column;
     gap: 1rem;
@@ -510,10 +555,34 @@ header {
     padding: 1rem;
   }
 
+  .entries-title {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    color: #6a3576;   
+  }
+
+  .entries-title::after {
+    width: 40%;       
+    height: 3px;
+    background: linear-gradient(90deg, #f3b6d4, #c7a6e2);
+  }
+
   .entry {
     padding: 1rem;
   }
+
   /* Resources */
+  .resources h1 {
+    display: block;      
+    text-align: center;   
+    font-size: 2rem; 
+    margin: 0 auto 1rem;   
+  }
+
+  .resources h1::after {
+    width: 40%;  
+    margin: 0.5rem autho 0;
+  }
 
   .resources .resource-links {
     flex-direction: column;
@@ -522,15 +591,17 @@ header {
 
   .resource-card {
     width: 100%;
+    max-width: 320px;
   }
-  /*doodle */
-@media (max-width: 768px) {
+
+  /* Doodle */
   #doodleCanvas {
     width: 100%;
     height: auto;
     max-width: 100%;
   }
-}
+
+  /* Contact */
   .contact {
     padding: 2rem 1rem;
   }

@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head> 
-        <meta charset="UTF-8" />
-        <title> Assignment 8 JAVASCRIPTArrays </title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Assignment 8</h1>
-            <h2>Arrays</h2>
-        </header>
-        <main>
-            <div id="gallery">
-                <div class="dog-card">
-                    <img src="images/dog1before.png" alt="Dog 1" title="Dog 1 - ADOPT ME" />
-                    <div class="caption">ADPOT MEEEEE</div>
-                </div>
-                <div class="dog-card">
-                    <img src="images/dog2before.png" alt="Dog 2" title="Dog 2 - take me home" />
-                    <div class="caption">TAKE ME HOME</div>
-                </div>
-                <div class="dog-card">
-                    <img src="images/dog3before.png" alt="Dog 3" title="Dog 3 - please adopt" />
-                    <div class="caption">Please adopt me</div>
-                </div>
-                <div class="dog-card">
-                    <img src="images/dog4before.png" alt="Dog 4" title="Dog 4 - please take me" />
-                    <div class="caption">Please TAKE ME </div>
-                </div>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8" />
+    <title>Assignment 8 JAVASCRIPT Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Assignment 8</h1>
+        <h2>Arrays</h2>
+    </header>
+
+    <main>
+        <div id="gallery">
+            <div class="dog-card" data-title="After adoption: Hary" data-after="images/dog1after.png">
+                <img src="images/dog1before.png" alt="Dog 1" title="Dog 1 - ADOPT ME" />
+                <div class="caption">ADOPT MEEEEE</div>
             </div>
-            
-        </main>
-    </body>
- 
+            <div class="dog-card" data-title="After adoption: Coco" data-after="images/dog2after.png">
+                <img src="images/dog2before.png" alt="Dog 2" title="Dog 2 - take me home" />
+                <div class="caption">TAKE ME HOME</div>
+            </div>
+            <div class="dog-card" data-title="After adoption: Luner" data-after="images/dog3after.png">
+                <img src="images/dog3before.png" alt="Dog 3" title="Dog 3 - please adopt" />
+                <div class="caption">Please adopt me</div>
+            </div>
+            <div class="dog-card" data-title="After adoption: Maxcy" data-after="images/dog4after.png">
+                <img src="images/dog4before.png" alt="Dog 4" title="Dog 4 - please take me" />
+                <div class="caption">Please TAKE ME</div>
+            </div>
+        </div>
+        
+        <div id="popup" class="hidden">
+            <div class="popup-content">
+                <span id="close">&#10006;</span>
+                <h3 id="popup-title"></h3>
+                <img id="popup-img" src="" alt="Adopted Dog">
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <p>All Images taken from <a href="https://www.boredpanda.com/HAPPY-DOGS-BEFORE-AFTER-ADOPTION/">BoredPanda</a></p>
-        <p>&copy; 2025 Ruchika Paladugu </p>
+        <p>All Images taken from 
+            <a href="https://www.boredpanda.com/HAPPY-DOGS-BEFORE-AFTER-ADOPTION/">BoredPanda</a>
+        </p>
+        <p>&copy; 2025 Ruchika Paladugu</p>
     </footer>
 
     <script src="script.js"></script>
-
+</body>
 </html>
