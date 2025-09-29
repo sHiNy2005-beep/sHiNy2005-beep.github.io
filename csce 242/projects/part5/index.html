@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8"/>
+  <title>HeartLog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--  Main Header for the website -->
+  <header id="home">
+    <div class="logo">
+      <img src="images/heartlog.ai.png" alt="Heartlogo" />
+    </div>
+    <div class="Main-title">Heart♥Log</div> 
+    <div class="title-alignment"></div>
+  </header>
+
+<!-- Navigation bar on the top -->
+  <nav class="main-nav">
+    <button class="toggle" aria-label="Toggle navigation">☰</button>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#journal">Journal</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#doodle">Doodle</a></li>
+    </ul>
+  </nav>
+<!--Home page for show-->
+  <section class="home">
+    <img src="images/home-background.jpg" alt="Background" class="background-home">
+  
+    <div class="home-content">
+    <h1>Welcome to Heart♥Log</h1>
+    <p>Your personal space for journaling, resources, and creativity</p>
+    <a href="#journal" class="btn-home">Start Exploring</a>
+    </div>
+  </section>
+  <main>
+<!-- Journal Entries for the user -->
+    <section id="journal" class="entries">
+      <h1 class="entries-title">Recent Entries</h1>
+
+      <article class="entry">
+        <div class="entry-date">Oct 12, 2025</div>
+        <h2>Morning routine</h2>
+        <p>Started the day to brush my teeth, do my hair and shower.It was nothing but peaceful to have time to get these things done.</p>
+        <span class="mood">Calm</span>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Oct 14, 2025</div>
+        <h2>Walking in the Park</h2>
+        <p>The walk around the Southeast park was the best thing I had did today.I will make sure to give myself time to do this often.</p>
+        <span class="mood">Peaceful</span>
+      </article>
+
+      <article class="entry">
+        <div class="entry-date">Oct 13, 2025</div>
+        <h2>Hard time at work</h2>
+        <p>Working at the gas station is not work the weak.It is everyday there is some different character just shows up to annoy me.</p>
+        <span class="mood">Resilient</span>
+      </article>
+    </section>
+<!-- Resources section for the external help -->
+    <section  id="resources" class="resources">
+        <p>Resources</p>
+        <div class="resource-links">
+        <a href="https://www.betterhelp.com/" target="_blank" class="resource-card">
+            <img src="images/betterhelp.png" alt="Better Help">
+            <h3>Better Help</h3>
+        </a>
+
+        <a href="https://www.simplepractice.com/" target="_blank" class="resource-card">
+            <img src="images/simplepractice.png" alt="SimplePractice">
+            <h3>SimplePractice</h3>
+        </a>
+
+        <a href="https://www.brightside.com/" target="_blank" class="resource-card">
+            <img src="images/brightside.png" alt="BrightSide">
+            <h3>BrightSide</h3>
+        </a>
+        </div>
+    </section>
+ <!-- Doodle Section -->
+    <section id="doodle" class="doodle">
+        <h1>Doodle Board</h1>       
+        <p class="section-subtitle">A blank space to doodle and take your mind elsewhere.</p>
+
+        <canvas id="doodleCanvas" width="800" height="400"></canvas>
+
+        <button id="clearBtn">Clear Board</button>
+    </section>
+
+
+<!-- Contact Section  -->
+    <section id="contact" class="contact">
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, suggestions, or concerns, reach out here!</p>
+        <form class="contact-form" action="#" method="post">
+          <div class="contactbox">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="contactbox">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="contactbox">
+            <label for="reason">Reason for Contact</label>
+            <select id="reason" name="reason" required>
+              <option value="">Select an option</option>
+              <option value="feedback">Feedback</option>
+              <option value="support">Support</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+<!-- Forms for the contact form in the contact section-->    
+       <button type="submit" class="btn-contact">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id = "footer">
+    <p>&copy; 2025 HeartLog.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
