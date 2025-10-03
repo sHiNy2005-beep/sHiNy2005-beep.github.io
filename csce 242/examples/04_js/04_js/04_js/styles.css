@@ -208,7 +208,7 @@ h2 {
 }
 
 #main-nav li, #sub-nav li {
-    list-style-type: none; 
+    list-style-type: none;  /* remove the bullets */
     text-align: center;
     border-bottom:1px solid white;
 }
@@ -224,7 +224,7 @@ h2 {
 
 #main-nav a, #sub-nav a {
     color:white;
-    text-decoration: none;  
+    text-decoration: none;  /* remove the underlines */
     border-bottom:1px solid transparent;
 }
 

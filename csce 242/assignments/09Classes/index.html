@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+  <meta charset="UTF-8" />
+  <title>Assignment 9 JAVASCRIPT Classes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Assignment 9</h1>
+    <h2>Classes</h2>
+  </header>
+
+  <main>
+    <div id="gallery"></div>
+  </main>
+
+  <footer>
+    <p>All Images taken from 
+      <a href="https://www.pinterest.com/pin/480900066475737317/">Pinterest</a>
+    </p>
+    <p>&copy; 2025 Ruchika Paladugu</p>
+  </footer>
+
+  <div id="imgModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top" style="max-width:800px; border-radius:10px;">
+      <span id="closeModal" class="w3-button w3-display-topright" title="Close">&times;</span>
+      
+      <div class="w3-container" style="text-align:center;">
+        <h3 id="modalTitle" style="margin:8px 0 4px 0;"></h3>
+        <p id="modalArtist" style="margin:0 0 12px 0; color:gray;"></p>
+        <img id="modalImg" class="w3-image" style="max-height:70vh; border-radius:6px;" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
