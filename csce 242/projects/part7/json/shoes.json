@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "_id": 1,
+      "title": "Morning Reflections",
+      "date": "2025-09-25",
+      "img_name": "json/images/morning-reflection.png",
+      "mood": "Peaceful",
+      "summary": "Started my day with a walk and meditation. Felt calm and focused.",
+      "category": "Wellness"
+    },
+    {
+      "_id": 2,
+      "title": "Busy Study Day",
+      "date": "2025-09-26",
+      "img_name": "json/images/midterm-exam.png",
+      "mood": "Productive",
+      "summary": "Had three classes and a project meeting. Stayed organized and motivated.",
+      "category": "School"
+    },
+    {
+      "_id": 3,
+      "title": "Weekend Fun",
+      "date": "2025-09-27",
+      "img_name": "json/images/weekend-fun.png",
+      "mood": "Relaxed",
+      "summary": "Spent time with family in Georgia.",
+      "category": "Personal"
+    },
+    {
+      "_id": 4,
+      "title": "Gym Time",
+      "date": "2025-09-28",
+      "img_name": "json/images/gym-time.png",
+      "mood": "Energized",
+      "summary": "Worked out with a friend after a long time.",
+      "category": "Fitness"
+    },
+    {
+      "_id": 5,
+      "title": "Family Time",
+      "date": "2025-09-29",
+      "img_name": "json/images/family-time.png",
+      "mood": "Happy",
+      "summary": "Had dinner with family after a while.",
+      "category": "Family"
+    },
+    {
+      "_id": 6,
+      "title": "Rainy Weather",
+      "date": "2025-09-30",
+      "img_name": "json/images/rainy-weather.png",
+      "mood": "Calm",
+      "summary": "Rainy day. Spent the evening with someone I like.",
+      "category": "Reflection"
+    },
+    {
+      "_id": 7,
+      "title": "Midterm Stress",
+      "date": "2025-10-01",
+      "img_name": "json/images/midterm-exam.png",
+      "mood": "Stressed",
+      "summary": "Studying for midterms, math was tough!",
+      "category": "School"
+    },
+    {
+      "_id": 8,
+      "title": "Self-Care Sunday",
+      "date": "2025-10-02",
+      "img_name": "json/images/self-care.png",
+      "mood": "Refreshed",
+      "summary": "Did a face mask, listened to music, and journaled about my goals.",
+      "category": "Wellness"
+    }
+  ]
+}
